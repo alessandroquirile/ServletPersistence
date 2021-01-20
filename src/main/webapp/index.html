@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Servlet Persistence</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+</head>
+
+<body>
+
+    <p>
+        Questa demo dimostra la persistenza di una servlet. Le variabili d'istanza della servlet permangono nel container 
+        finché non avviene il destroy del servlet (cioè quando viene fatto il reboot o si spegne il server contenente la servlet).
+        Motivo per cui è possibile stabilire il numero di visitatori da quando la servlet è stata avviata per la prima volta
+        (e finché non verrà spenta o riavviata).
+    </p>
+
+    <form action="CounterServlet" method="POST">
+        <input name="name" placeholder="Your name" type="text">
+        <br>
+        <input type="Submit" value="Confirm">
+    </form>
+
+</body>
+
+</html>
